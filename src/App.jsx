@@ -2,6 +2,7 @@ import { useState } from "react";
 import Select from "react-select";
 import "./App.css";
 import DropdownMenu from "./Movable";
+import CustomDropdown from "./CustomDropdown";
 const data = [
   {
     label: "Menu 1",
@@ -88,6 +89,8 @@ export default function App() {
       />
       <div>Movable dropdown</div>
       <DropdownMenu />
+      <div>Custom dropdown type $</div>
+      <CustomDropdown />
     </>
   );
 }
