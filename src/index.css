@@ -1,0 +1,46 @@
+.Select {
+  font-size: 1.5rem;
+  width: 10rem;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid blue;
+  padding-bottom: 2px;
+  color: var(--deepGray);
+  background: url('data:image/svg+xml;utf8,<svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" fill="blue"></path> </svg>')
+    no-repeat right;
+  -webkit-appearance: none;
+}
+.Select:hover {
+  color: blue;
+  background: white;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>')
+    no-repeat right;
+}
+.Select:focus {
+  outline: none;
+  box-shadow: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>')
+    no-repeat right;
+  background-position: right;
+}
+option {
+  background: rgba(100, 100, 100, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  font-weight: bold;
+}
+option[value="4"] {
+  background: rgba(200, 200, 250, 0.3);
+}
+option:hover,
+option:checked,
+option:active,
+option:focus {
+  background: teal;
+  position: relative;
+}
+/* option:not(:checked) {
+  background-color: #fff;
+} */
